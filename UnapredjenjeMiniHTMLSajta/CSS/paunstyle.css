@@ -15,6 +15,7 @@ nav {
     border-bottom: 1px solid gray;
     background-color: rgb(112, 186, 255);
     text-align: center;
+    margin: 10px auto;
 }
 
 footer {
@@ -63,6 +64,7 @@ table,
 th,
 td {
     border: darkblue solid 1px;
+    font-size: 14px;
 }
 
 #prvi {
