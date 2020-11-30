@@ -1,5 +1,5 @@
 body {
-    width: 1300px;
+    width: 980px;
     margin: 20px auto;
     font-family: sans-serif;
     background-color: rgb(170, 224, 226);
@@ -13,6 +13,8 @@ header {
 nav {
     padding: 1px 0 1px 0;
     border-bottom: 1px solid gray;
+    background-color: rgb(112, 186, 255);
+    text-align: center;
 }
 
 footer {
@@ -23,7 +25,7 @@ footer {
 
 section {
     display: inline-block;
-    width: 900px;
+    width: 690px;
     padding: 10px;
     margin-bottom: 8px;
     margin-top: 8px;
@@ -33,10 +35,10 @@ section {
 
 aside {
     display: inline-block;
-    width: 343px;
+    width: 260px;
     vertical-align: top;
     padding: 0 0 0 8px;
-    font-size: 22px;
+    font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -66,4 +68,8 @@ td {
 #prvi {
     background-color: darkturquoise;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav a {
+    margin-right: 10px;
 }
