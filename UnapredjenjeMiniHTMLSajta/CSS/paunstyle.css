@@ -67,6 +67,18 @@ td {
     font-size: 14px;
 }
 
+tbody {
+    background-color: rgb(207, 209, 219);
+}
+
+th {
+    background-color: rgb(207, 250, 201);
+}
+
+td {
+    background-color: rgb(204, 248, 230);
+}
+
 #prvi {
     background-color: darkturquoise;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
