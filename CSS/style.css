@@ -1,0 +1,41 @@
+    body {
+        width: 980px;
+        margin: 20px auto;
+        font-family: sans-serif;
+        font-size: 14px;
+        color: azure;
+        background-color: rgb(206, 250, 206);
+    }
+    
+    h1,
+    h2,
+    h3 {
+        font-style: italic;
+        color: rgb(9, 190, 250);
+        text-align: center;
+    }
+    
+    .box {
+        width: 300px;
+        margin: 10px auto;
+        padding: 5px;
+        float: left;
+    }
+    
+    #container {
+        width: 960px;
+        height: 600px;
+        background-image: url("../paun.jpg");
+        opacity: 0.6;
+        overflow: auto;
+        margin: 5px auto;
+    }
+    
+    a:link {
+        color: rgb(240, 223, 247);
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: rgb(231, 228, 7);
+    }
