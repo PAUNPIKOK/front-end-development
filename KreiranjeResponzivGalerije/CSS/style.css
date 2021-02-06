@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+#container {
+    width: 980px;
+    background-color: aquamarine;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    padding: 5px 50px;
+}
+
+#galerija {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+img {
+    width: 100%;
+}
+
+.placeholder {
+    background-color: rgb(141, 141, 253);
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px rgb(141, 141, 253);
+}
+
+.placeholder p {
+    text-align: center;
+    color: rgb(59, 59, 252);
+    font-weight: 700;
+    background-color: bisque;
+    padding: 4px;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 5px 2px white;
+}
+
+@media screen and (max-width: 1024px) {
+    #galerija {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .placeholder p {
+        font-size: 16px;
+    }
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #galerija {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .placeholder p {
+        font-size: 20px;
+    }
+    body {
+        font-size: 12px;
+    }
+}
+
+.tekst {
+    padding: 15px 45px;
+    margin: 15px;
+}
