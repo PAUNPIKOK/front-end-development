@@ -30,15 +30,15 @@ img {
 }
 
 .placeholder {
-    background-color: #8d8dfd;
+    background-color: rgb(141, 141, 253);
     margin: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 2px 2px #8d8dfd;
+    box-shadow: 0 0 2px 2px rgb(141, 141, 253);
 }
 
 .placeholder p {
     text-align: center;
-    color: #3b3bfc;
+    color: rgb(59, 59, 252);
     font-weight: 700;
     background-color: bisque;
     padding: 4px;
@@ -75,6 +75,3 @@ img {
     padding: 15px 45px;
     margin: 15px;
 }
-
-
-/*# sourceMappingURL=style.css.map */
