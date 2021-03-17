@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ProgrZaObavljOsnoAritmOperacija">
+    <meta name="author" content="Paunovic Zoran - PAUN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Za Obavljanje Osnovnih Aritmetickih Operacija</title>
+    <style>
+        body {
+            background: burlywood;
+        }
+        #container {
+            width: 800px;
+            margin: 20px auto;
+            background: cadetblue;
+            text-align: center;
+            font-size: 40px;
+            
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    
+    <script>
+        var a = prompt("Unesite prvi broj");
+        while( a == "" ){
+            alert("The input is not allowed!!!");
+            a = prompt("Unesite prvi broj");
+        }
+
+        var operator = prompt("Unesite operaciju (+-*/)");
+        while(operator != "+" && operator != "-" && operator != "*" && operator != "/"){
+            alert("Operator not exist!!!");
+            operator = prompt("Unesite operaciju (+-*/)");
+        }
+
+        var b = prompt("unesite drugi broj");
+        while( b == 0 && operator == "/" || b == ""){
+            alert("The input is not allowed!!!");
+            b = prompt("unesite drugi broj");
+        }
+
+
+        if(operator == "+"){
+            y = parseInt(a) + parseInt(b);
+        }else if(operator == "-"){
+            y = parseInt(a) - parseInt(b);
+        }else if(operator == "/"){
+            y = parseInt(a) / parseInt(b);
+        }else if(operator == "*"){
+            y = parseInt(a) * parseInt(b);
+        }
+
+
+        var result = y; 
+        alert(result);
+        document.write(a, operator, b, '=' + result);
+
+    </script>
+</div>
+
+
+</body>
+</html>
