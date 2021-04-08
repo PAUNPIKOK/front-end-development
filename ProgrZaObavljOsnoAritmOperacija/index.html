@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="ProgrZaObavljOsnoAritmOperacija">
@@ -10,58 +11,110 @@
         body {
             background: burlywood;
         }
+
         #container {
             width: 800px;
             margin: 20px auto;
             background: cadetblue;
             text-align: center;
             font-size: 40px;
-            
+
         }
     </style>
 </head>
+
 <body>
 
-<div id="container">
-    
-    <script>
-        var a = prompt("Unesite prvi broj");
-        while( a != parseInt(a) ){
-            alert("The input is not allowed!!!");
-            a = prompt("Unesite prvi broj");
-        }
+    <div id="container">
 
-        var operator = prompt("Unesite operaciju (+-*/)");
-        while(operator != "+" && operator != "-" && operator != "*" && operator != "/"){
-            alert("Operator not exist!!!");
-            operator = prompt("Unesite operaciju (+-*/)");
-        }
+        <script>
+            var a = prompt("Unesite prvi broj");
+            while (a != parseInt(a) && a != "+" && a != "-") {
+                alert("The input is not allowed!!!");
+                a = prompt("Unesite prvi broj");
+            }
 
-        var b = prompt("unesite drugi broj");
-        while( b == 0 && operator == "/" || b != parseInt(b)){
-            alert("The input is not allowed!!!");
-            b = prompt("unesite drugi broj");
-        }
+            var operator = prompt("Unesite operaciju (+-*/)");
+            while (operator != "+" && operator != "-" && operator != "*" && operator != "/") {
+                alert("Operator not exist!!!");
+                operator = prompt("Unesite operaciju (+-*/)");
+            }
 
-
-        if(operator == "+"){
-            y = parseInt(a) + parseInt(b);
-        }else if(operator == "-"){
-            y = parseInt(a) - parseInt(b);
-        }else if(operator == "/"){
-            y = parseInt(a) / parseInt(b);
-        }else if(operator == "*"){
-            y = parseInt(a) * parseInt(b);
-        }
+            var b = prompt("unesite drugi broj");
+            while (b == 0 && operator == "/" || b != parseInt(b) && a != "+" && a != "-") {
+                alert("The input is not allowed!!!");
+                b = prompt("unesite drugi broj");
+            }
 
 
-        var result = y; 
-        alert(result);
-        document.write(a, operator, b, '=' + result);
+            if (operator == "+") {
+                y = parseInt(a) + parseInt(b);
+            } else if (operator == "-") {
+                y = parseInt(a) - parseInt(b);
+            } else if (operator == "/") {
+                y = parseInt(a) / parseInt(b);
+            } else if (operator == "*") {
+                y = parseInt(a) * parseInt(b);
+            }
 
-    </script>
-</div>
+
+            var result = y;
+            alert(result);
+            document.write(a, operator, b, '=' + result);
+
+
+            /*                    do{
+                                var a = prompt("Unesite prvi broj");
+                                var bExit = a == parseInt(a);
+                                if(!bExit){
+                                    alert("Samo celi brojevi!");
+                                }
+                                }while(!bExit);
+                                a = parseInt(a);
+
+                                do{
+                                    var operator = prompt("Unesite operaciju (+*-/)");
+                                    var bExit = operator == "+" || operator == "-" || operator == "*" || operator == "/";
+                                    if(!bExit){
+                                        alert("Nije prepoznat operator!");
+                                    }
+                                }while(!bExit);
+
+                                do{
+                                    var b		= prompt("Unesite drugi broj");
+                                    if(operator=="/"){
+                                        var bExit	= b == parseInt(b) &&  b != 0;
+                                        if(!bExit){
+                                            alert("Deljenje nulom nije dozvoljeno!");
+                                        }
+                                    }else{
+                                        var bExit	= b == parseInt(b);
+                                        if(!bExit){
+                                            alert("Samo celi brojevi!");
+                                        }
+                                    }
+                                }while(!bExit);
+                                b = parseInt(b);
+
+                                if(operator == "+"){
+                                    y = a + b;
+                                }else if(operator == "-"){
+                                    y = a - b;
+                                }else if(operator == "/"){
+                                    y = a / b;
+                                }else if(operator == "*"){
+                                    y = a * b;
+                                }
+
+                                alert("Rezultat je"+a+operator+b+"="+y);
+                                document.write(a, operator, b, '=' + y);
+
+        */
+
+        </script>
+    </div>
 
 
 </body>
+
 </html>

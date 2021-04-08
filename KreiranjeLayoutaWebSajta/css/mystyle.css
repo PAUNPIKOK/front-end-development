@@ -1,0 +1,45 @@
+header {
+    margin: 20px auto;
+}
+h1 {
+    padding: 15px;
+}
+ul {
+    margin-top: 25px;
+    text-align: right;
+}
+#banImg {
+    position: relative;
+}
+
+#textBanImg {
+    
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    font-size: 1em;
+    font-weight: bold;
+    background: rgba(46, 139, 87, 0.5);
+    color: seashell;
+    width: auto;
+    height: 60px;
+    padding-top: 8px;
+}
+
+
+/*
+@media screen and (max-width: 1024px) {
+    #bgs-menu li {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #bgs-menu a,
+    #jezik a {
+        font-size: 40px;
+    }
+    #bgs-menu li {
+        width: 745px;
+    }
+}*/
