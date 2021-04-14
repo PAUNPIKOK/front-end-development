@@ -12,19 +12,19 @@
 </head>
 
 <body>
-    <div class="container">
+    <div id="container">
         <header>
-            <div class="row">
-                <div class="col-6">
+            <div id="menu" class="row">
+                <div id=menuRow class="col-6 col-md-5">
                     <h1 class="display-6">My Website</h1>
                 </div>
-                <div id=menuHam class="col-2 offset-2">
-                    <img class="img-fluid" src="images/menu.png" alt="menu">
+                <div class="col-2 offset-2 d-lg-none hamImg">
+                    <img class="img-fluid menuHam" src="images/menu.png" alt="menu">
                 </div>
-                <div class="col-2">
+                <div class="col-2 d-lg-none leterMenu">
                     <p>Menu</p>
                 </div>
-                <div id="meny" class="col-6 d-none d-md-inline-block">
+                <div class="col-6 d-none d-lg-inline-block">
                     <ul class="list-inline">
                         <li class="list-inline-item">Home</li>
                         <li class="list-inline-item">Portfolio</li>
@@ -36,18 +36,147 @@
                     </ul>
                 </div>
             </div>
-        </header>
-        <main>
             <div class="row">
                 <div id=banImg class="col-12">
                     <img class="img-fluid" src="images/hero.jpg" alt="banImg">
-                    <div clas="col-12">
-                        <p id="textBanImg">We strive to make all of our creations exquisite.</p>
+                    <div id="textBanImg" clas="col-10 ">
+                        <p>We strive to make all of our creations exquisite.</p>
                     </div>
                 </div>
-
+            </div>
+        </header>
+        <main>
+            <div id="second" class="row justify-content-center">
+                <div class="col-md-9 col-lg-3 secondImg">
+                    <div><img src="images/icon-1.png" alt=""></div>
+                    <div>
+                        <h3>Purpose</h3>
+                        <p>Vestibulum sapiens nisi, suscipit vitae euismod vitae, imperdiet eget est.
+                            Etiam tincidunt tempus.</p>
+                    </div>
+                </div>
+                <div class="col-md-9 col-lg-3">
+                    <div><img src="images/icon-2.png" alt=""></div>
+                    <div>
+                        <h3>Quality</h3>
+                        <p>Nam kommodo risus pharetta magna egestas, nec iasulis augue lobortis.
+                            Proin eleifend enim quis.</p>
+                    </div>
+                </div>
+                <div class="col-md-9 col-lg-3">
+                    <div><img src="images/icon-3.png" alt=""></div>
+                    <div>
+                        <h3>Function</h3>
+                        <p>Aenean et tellud is nisi vehicula fringilla. In
+                            condimentum dui eu turpis mollis turpis suscipit.</p>
+                    </div>
+                </div>
+                <div class="col-md-9 col-lg-3">
+                    <div><img src="images/icon-4.png" alt=""></div>
+                    <div>
+                        <h3>Elegant</h3>
+                        <p>Maruis acumssan magna in placerat lacinia. Proin sit
+                            amet neque vitae nunc pulvinar varius.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="third" class="row justify-content-center">
+                <div class="col-md-9 col-lg-12">
+                    <h4>RECENT VORK</h4>
+                </div>
+                <div class="col-md-9 col-lg-12">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 thirdImg">
+                            <img class="img-fluid" src="images/bike-400x340.jpg" alt="">
+                            <h5>Green Bike</h5>
+                            <p>Beautiful, Travel</p>
+                        </div>
+                        <div class="col-md-6 col-lg-3 thirdImg">
+                            <img class="img-fluid" src="images/surf-400x340.jpg" alt="">
+                            <h5>Salt Of The Earth</h5>
+                            <p>Beautiful, Travel</p>
+                        </div>
+                        <div class="col-md-6 col-lg-3 thirdImg">
+                            <img class="img-fluid" src="images/hills-400x340.jpg" alt="">
+                            <h5>Green Bike</h5>
+                            <p>Travel</p>
+                        </div>
+                        <div class="col-md-6 col-lg-3 thirdImg">
+                            <img class="img-fluid" src="images/path-400x340.jpg" alt="">
+                            <h5>Green Bike</h5>
+                            <p>Beautiful</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fourth" class="row justify-content-center">
+                <div class="col-md-9 col-lg-12">
+                    <h4>FROM THE BLOG</h4>
+                </div>
+                <div class="col-md-9 col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4 thirdImg">
+                            <img class="img-fluid" src="images/cow-640x340.jpg" alt="">
+                            <h5>How Now<br>
+                                <small class="text-muted">Posted on October 28, 2020</small>
+                            </h5>
+                            <p>Proin et ligula laoreaet, vestibulum orci nec, eleifend purus.
+                                Quisque ullaucoper sem at ipsum elementum laoreet. Integer egestas...
+                            </p>
+                        </div>
+                        <div class="col-lg-4 thirdImg">
+                            <img class="img-fluid" src="images/sunrise-640x340.jpg" alt="">
+                            <h5>Adrift by Simon Christen<br>
+                                <small class="text-muted">Posted on September 29, 2020</small>
+                            </h5>
+                            <p>Morbi vulputate agestas sem, eu cursus ligula ullamcorper non. Curabitor tristique
+                                velit eu mauris venenatis egestas. Phasellus bibendum...
+                            </p>
+                        </div>
+                        <div class="col-lg-4 thirdImg">
+                            <img class="img-fluid" src="images/grass-640x340.jpg" alt="">
+                            <h5>A Walk In The Park<br>
+                                <small class="text-muted">Posted on August 10, 2020</small>
+                            </h5>
+                            <p>Proin elementum pharetra mauris sed semper. Cras lorem arcu, vulputate ut malesuada ut,
+                                tincidunt tempor lectus. Etiam adipiscing...
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
+        <footer>
+            <div id="fifth" class="row justify-content-center">
+                <div class="col-md-9 col-lg-4 footPadd">
+                    <h5>My Website</h5>
+                    <p id="firstP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sint natus quidem culpa
+                        minus
+                        veniam itaque laborum aliquid inventore eum dolores rerum quod, blanditiis modi libero at
+                        voluptatum facilis rem! Voluptatum nam accusantium earum. Quidem.
+                    </p>
+                </div>
+                <div class="col-md-9 col-lg-4 lines footPadd">
+                    <h5>Recent Posts<br></h5>
+                    <p>How Now</p>
+                    <p>Adrift by Simon Christen</p>
+                    <p>A Walk In The Park</p>
+                    <p>Time To Think</p>
+                    <p>Field Of Dreams</p>
+                </div>
+                <div class="col-md-9 col-lg-4 lines footPadd">
+                    <h5>Recent Work<br></h5>
+                    <p>Beautifol</p>
+                    <p>Travel</p>
+                    <p>Surreal</p>
+                    <p>Thoughts</p>
+                    <p>Unikue</p>
+                </div>
+                <div id="copyright">
+                    Copyright &copy; 2021 Zoran Paunovic - PAUN
+                </div>
+            </div>
+        </footer>
     </div>
 
     <!--MESTO ZA SKRIPTE-->
