@@ -1,0 +1,181 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+/********************MOBILE MENU**************************/
+
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: #221918a8;
+    display: none;
+}
+#mobile-menu a {
+    color: azure;
+}
+#mobile-menu a:hover {
+    color: rgb(178, 180, 180);
+}
+#mobile-menu #close-btn {
+    position: absolute;
+    right: 23px;
+    top: 25px;
+    font-size: 40px;
+}
+
+
+
+/********************Header**************************/
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#header-logo {
+    height: 80px;
+}
+header a {
+    color: white;
+    margin-left: 24px;
+}
+header a:hover{
+    color: white;
+}
+header a:visited {
+    color: white;
+}
+
+#menu-btn {
+    font-size: 35px;    
+  }
+.solid-header {
+    position: fixed;
+    background-color: #3b2616d5;
+    transition: background-color 0.9s ease ;
+}
+
+
+/********************Hero Section**************************/
+
+#hero-section {
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hero-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background:  #745c5a9c;
+    height: 100vh;
+}
+#hero-logo {
+    width: 150px;
+    border-radius: 100%;
+    
+}
+
+#arrow-down {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 64px;
+    font-size: 40px;
+
+}
+
+/********************Intro Section**************************/
+
+#intro-section {
+    background: #eae7de;
+  }
+.ic-intro {
+    width: 65px;
+}
+
+/******************************************ABOUT SECTION*****************************************/
+
+#about-bg-1 {
+    background-image: url(../images/cof01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 480px;
+  }
+  #about-bg-2 {
+    background-image: url(../images/cof03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 640px;
+    
+  }
+  #coverAbout {
+      background-color: #312423a8;
+  }
+  
+
+/*************************************MENU SECTION ******************************************************/
+
+#menu-section {
+    background-color: #eae7de;
+  }
+  
+  
+  /*************************************CONTACT SECTION  ******************************************************/
+ 
+  #contact-info-bg-1 {
+    background: linear-gradient(to right, #36313782, #36313782),
+      url("../imgs/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+  
+  #contact-info-bg-2 {
+    background-color: #312423a8;
+  }
+  
+
+  
+/*************************************MAP SECTION  ******************************************************/
+
+#map {
+  height: 480px;
+}
+
+
+/*************************************FOOTER SECTION  ******************************************************/
+
+footer {
+    background-color: #312423;
+  }
+  footer a i {
+    width: 32px;
+    font-size: 30px;
+  }
+  .soc-icon {
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      text-align: center;
+    }
+    #social-icons {
+      text-align: center !important;
+      margin-top: 8px;
+    }
+  }

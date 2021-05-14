@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Template_za_Bootstrap">
+    <meta name="author" content="Paunovic Zoran - PAUN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/leaflet/leaflet.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myStyle.css">
+    <link href="fa/css/all.min.css" rel="stylesheet">
+    <title>Coffee Shop</title>
+</head>
+
+<body>
+
+    <div id="mobile-menu">
+        <a id="close-btn" href="#"><i class="far fa-times-circle"></i></a>
+        <div class="container">
+            <div class="row vh-100 align-items-center">
+                <div class="col-12 text-center">
+                    <nav>
+                        <div>
+                            <a class="mobile-menu-item text-decoration-none text-uppercase h3"
+                                href="#intro-section">about</a>
+                        </div>
+                        <div class="my-3">
+                            <a class="mobile-menu-item text-decoration-none text-uppercase h3"
+                                href="#menu-section">product</a>
+                        </div>
+                        <div class="mb-3">
+                            <a class="mobile-menu-item text-decoration-none text-uppercase h3"
+                                href="#contact-info-section">contact</a>
+                        </div>
+                        <div>
+                            <a class="mobile-menu-item text-decoration-none text-uppercase h3" href="#map-section">how
+                                to find us?</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header id="header" class="p-3">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <img class="img-fluid" id="header-logo" src="images/header-logo.png" alt="header-logo">
+                </div>
+                <div class="d-none d-md-block col-8 " style="text-align: right;">
+                    <a class="text-decoration-none text-uppercase" href="#intro-section">about</a>
+                    <a class="text-decoration-none text-uppercase" href="#menu-section">product</a>
+                    <a class="text-decoration-none text-uppercase" href="#contact-info-section">contact</a>
+                    <a class="text-decoration-none text-uppercase" href="#map-section">how to find us?</a>
+                </div>
+                <div class="d-md-none col-8 text-end">
+                    <a id="menu-btn" href="#"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="hero-section" class="text-light">
+        <div class="container-fluid">
+            <div class="row vh-100 align-items-center pb-5">
+                <div class="col-12 text-center pt5">
+                    <img id="hero-logo" src="images/logo.jpg" alt="coffe shop logo">
+                    <h1 class="display-2 font-weight-bold">The Home Of Coffee</h1>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio perspiciatis odio
+                        fugit quas consectetur alias placeat sunt possimus.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a id="arrow-down" class="text-center text-light" href="#intro-section"><i
+                class="far fa-arrow-alt-circle-down"></i></a>
+    </section>
+
+
+    <section id="intro-section" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-10 col-xl-6 text-center py-5">
+                    <h1 class="font-weight-bold">THE BEST COFFEE SHOP</h1>
+                    <P class="text-muted lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea dolor
+                        deserunt rerum nihil commodi earum voluptas, explicabo nobis minus at dolores officiis eum
+                        architecto perferendis voluptatibus est!</P>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-sm-4 text-center">
+                    <img class="ic-intro img-fluid py-3" src="images/icon-1.png" alt="icon-1">
+                    <p class="h4 font-weight-bold">BEST BEANS</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="ic-intro img-fluid py-3" src="images/icon-2.png" alt="icon-2">
+                    <p class="h4 font-weight-bold">QUALITI MILK</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="ic-intro img-fluid py-3" src="images/icon-3.png" alt="icon-3">
+                    <p class="h4 font-weight-bold">PERFECT BLEND</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-12 col-md-5 offset-md-1 p-5 align-self-center p-5">
+                    <h2>GREAT PLACE FOR CHILL</h2>
+                    <p class="text-muted lead">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non
+                        consequatur assumenda autem dolores! Dolore quo eius dolores sed
+                        ut velit illum? Quis quaerat deserunt praesentium quidem hic
+                        suscipit blanditiis temporibus.Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Non consequatur assumenda autem
+                        dolores! Dolore quo eius dolores sed ut velit illum? Quis quaerat
+                        deserunt praesentium quidem hic suscipit blanditiis temporibus.
+                    </p>
+                    <button class="btn btn-primary">FIND OUT MORE</button>
+                </div>
+
+                <div class="d-none d-md-block col-5 offset-1" id="about-bg-1"></div>
+            </div>
+            <div class="row align-items-center" id="about-bg-2" id="milk-section">
+                <div class="d-none d-md-block col-md-6"></div>
+                <div id="coverAbout" class="col-12 col-md-6 text-light p-5">
+                    <h2>FRESH MILK</h2>
+                    <p class="lead text-light font-weight-bold">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                        quia optio? Veniam delectus aperiam dolore dolorum harum nobis
+                        facere, consequatur cupiditate accusantium, quas numquam eaque
+                        optio doloribus accusamus blanditiis repudiandae.
+                    </p>
+                    <button class="btn btn-primary">Check recipes</btn>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center py-5">
+                    <h1>SELECTION FROM OUR MENU</h1>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, amet corporis magni
+                        assumenda iure nesciunt quaerat nam ut quas deleniti.</P>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img class="img-fluid" src="images/01.png" alt="cup of coffee">
+                    <h2 class="my-3">BLACK COFFEE</h2>
+                    <p class="lead my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, tempora!</p>
+                    <p class="h3">4$</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img class="img-fluid" src="images/02.png" alt="cup of coffee">
+                    <h2 class="my-3">BLACK COFFEE</h2>
+                    <p class="lead my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, tempora!</p>
+                    <p class="h3">4$</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img class="img-fluid" src="images/03.png" alt="cup of coffee">
+                    <h2 class="my-3">BLACK COFFEE</h2>
+                    <p class="lead my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, tempora!</p>
+                    <p class="h3">4$</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img class="img-fluid" src="images/04.png" alt="cup of coffee">
+                    <h2 class="my-3">BLACK COFFEE</h2>
+                    <p class="lead my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, tempora!</p>
+                    <p class="h3">4$</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img class="img-fluid" src="images/05.png" alt="cup of coffee">
+                    <h2 class="my-3">BLACK COFFEE</h2>
+                    <p class="lead my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, tempora!</p>
+                    <p class="h3">4$</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img class="img-fluid" src="images/06.png" alt="cup of coffee">
+                    <h2 class="my-3">BLACK COFFEE</h2>
+                    <p class="lead my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, tempora!</p>
+                    <p class="h3">4$</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-info-section">
+        <div class="container-fluid text-light">
+            <div class="row" id="contact-info-bg-1">
+                <div class="col-md-5 offset-md-1 p-5">
+                    <h2>YOU ARE WELCOME</h2>
+                    <p>COME ON IN!</p>
+                    <br>
+                    <h4>WEEKDAYS</h4>
+                    <p>08PM - 12AM</p>
+                    <br>
+                    <h4>WEEKENDS</h4>
+                    <p>12 PM - 02 AM</p>
+                </div>
+                <div class="col-md-6 p-5" id="contact-info-bg-2">
+                    <h2>CONTACT</h2>
+                    <br>
+                    <h4>PHONE</h4>
+                    <p>+88 4411 122 23</p>
+                    <h4>MAIL</h4>
+                    <p>address@domain.com</p>
+                    <br>
+                    <h4>ADDRESS</h4>
+                    <p>543, down street, New York</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map-section">
+        <div id="map">
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid text-light py-3">
+            <div class="row">
+                <div class="col-md-5 offset-md-1 align-self-center">
+                    Coffee Shop | &copy; 2021 All rights reserved
+                </div>
+                <div class="col-md-5 offset-md-1 text-end" id="social-icons">
+                    <a class="soc-icon" href="#"><i class="fab fa-facebook-square mr-2"></i></a>
+                    <a class="soc-icon" href="#"><i class="fab fa-twitter-square mr-2"></i></a>
+                    <a class="soc-icon" href="#"><i class="fab fa-instagram-square mr-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.6.0.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/leaflet.js"></script>
+
+    <script>
+
+        window.addEventListener("load", function () {/////((( <-  KADA SE UCITA KOMPLETNA STRANICA   )))
+            //////////////JavaScrypt LOGIKA////////////////////////////////////////////////////////
+
+            /* let menuBtn = document.getElementById("menu-btn");
+             let mobileMenu = document.getElementById("mobile-menu");
+             let closeBtn = document.getElementById("close-btn");
+ 
+             menuBtn.addEventListener("click", function () {
+                 mobileMenu.style.display = "block";
+             });
+             closeBtn.addEventListener("click", function () {
+                 mobileMenu.style.display = "none";
+             });
+ 
+             let mobileMenuItems = document.getElementsByClassName("mobile-menu-item");
+ 
+             for (let i = 0; i < mobileMenuItems.length; i++) {
+                 mobileMenuItems[i].addEventListener("click", function () {
+                     mobileMenu.style.display = "none";
+                 })
+             }*/     ////////////////////////////////////////////////////////////////////////////////
+
+            //////////////////////JQuery LOGIKA/////////////////////////////////
+
+            $("#menu-btn, #close-btn, .mobile-menu-item").click(function () {
+                $("#mobile-menu, #menu-btn").toggle();
+            });
+
+            //----------for header solid-----------//
+            //////////////////////////JavaScrypt LOGIKA////////////////////////////////////////////////////////////
+
+            /*let heroSection = document.getElementById("hero-section");
+            let heroSectionHeight = heroSection.clientHeight;
+            let header = document.getElementById("header")
+
+            document.addEventListener("scroll", function () {
+                if (document.documentElement.scrollTop > heroSectionHeight) {
+                    if (!header.classList.contains("solid-header")) {
+                        header.classList.add("solid-header");
+                    }
+                } else {
+                    if (header.classList.contains("solid-header")) {
+                        header.classList.remove("solid-header");
+                    }
+                }
+            })*/
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////JQuery LOGIKA////////////////////////
+
+            $(document).scroll(function () {
+                let header = $("#header");
+
+                if ($(this).scrollTop() > $("#hero-section").height()) {
+                    if (!header.hasClass("solid-header")) {
+                        header.addClass("solid-header");
+                    }
+                } else {
+                    if (header.hasClass("solid-header")) {
+                        header.removeClass("solid-header");
+                    }
+                }
+            })
+            //////////////////////MAPA INTEGRACIJA LOGIKA/////////////////////////////////////////////////
+
+            var myMap = L.map('map', {
+                center: [43.30697, 21.92788],
+                zoom: 17
+            });
+                    ////////////TEMPLATE ZA PRIKAZIVANJE MAPE U ZADATOM DIVU///////////////////
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(myMap);
+                    /////////////////////////////////////////////////////////////////////////////
+
+            var myIcon = L.icon({
+                iconUrl: 'images/bulbgrey.png'
+            });
+            var marker = L.marker([43.30750, 21.92768], {
+                icon: myIcon
+            }).addTo(myMap);
+
+            marker.bindPopup ("Paun je ovde");
+
+        });
+    </script>
+
+
+</body>
+
+</html>
