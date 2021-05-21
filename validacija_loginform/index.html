@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Website Building</title>
+    <link rel="stylesheet" href="css/myStyle.css">
+    <link href="fa/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="login-container">
+
+        <form class="login_form" action="javascript:alert('Successful login!')" method="post" name="form"
+            onsubmit="return validated()">
+            <div class="form-control">
+                <label class="lab" for="username">Username:</label>
+                <input id="username" autocomplete="off" type="text">
+                <i class="fas fa-check" id="one"></i>
+                <i class="fas fa-times" id="oneX"></i>
+            </div>
+            <div class="form-control">
+                <label class="lab lab1" for="password">Password:</label>
+                <input id="password" type="password">
+                <i class="fas fa-check" id="two"></i>
+                <i class="fas fa-times" id="twoX"></i>
+            </div>
+            <input id="sub" type="submit" value="Login">
+
+            <div id="user_error">Please, enter username!!!</div>
+            <div id="user_error2">Please, enter valid username!!!</div>
+            <div id="pass_error">Please, enter password!!!</div>
+            <div id="pass_error2">Please, enter valid password!!!</div>
+            <div id="successful">Successful login!!!</div>
+        </form>
+
+    </div>
+
+    <script src="js/myJS.js"></script>
+
+</body>
+
+</html>
