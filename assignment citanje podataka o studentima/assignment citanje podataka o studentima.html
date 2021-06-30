@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citanje Podataka O Studentima</title>
+    <style>
+        #container {
+            margin: 0 auto;
+            width: 680px;
+            height: auto;
+            background-color: aquamarine;
+        }
+
+        #student-List {
+            margin-top: 80px;
+            margin-left: 250px;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="student-List"></div>
+    </div>
+
+    <script>
+        async function getData() {
+            try {
+                studentList = document.getElementById("student-List");
+                const studentData = await fetch('https://v-dresevic.github.io/Advanced-JavaScript-Programming/data/students.txt');
+                if (studentData.status !== 200) {
+                    throw new Error("Error while reading file.");
+                }
+                var text = await studentData.text();
+                var studentAray = text.split('\n');
+
+                class Student {
+                    constructor(name, address, phone, course) {
+                        this.name = name;
+                        this.address = address;
+                        this.phone = phone;
+                        this.course = course;
+
+                    }
+                    getInfo() {
+                        return "Name: " + this.name + "\n" +
+                            "Address: " + this.address + "\n" +
+                            "Phone: " + this.phone + "\n" +
+                            "Course: " + this.course + "\r";
+                    }
+                }
+
+                var student1 = new Student(studentAray[0], studentAray[1], studentAray[2], studentAray[3]);
+                var student2 = new Student(studentAray[4], studentAray[5], studentAray[6], studentAray[7]);
+                var student3 = new Student(studentAray[8], studentAray[9], studentAray[10], studentAray[11]);
+                var student4 = new Student(studentAray[12], studentAray[13], studentAray[14], studentAray[15]);
+                var student5 = new Student(studentAray[16], studentAray[17], studentAray[18], studentAray[19]);
+
+                document.getElementById("student-List").innerHTML =
+                    student1.getInfo().concat(student2.getInfo()).concat(student3.getInfo()).concat(student4.getInfo()).concat(student5.getInfo());
+
+            } catch (err) {
+                studentList.innerHTML = 'Error: ' + err.message;
+            }
+
+        }
+        getData()
+
+    </script>
+
+</body>
+
+</html>
