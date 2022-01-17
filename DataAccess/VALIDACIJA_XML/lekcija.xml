@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Deklaracija za povezivanje externog DTD doc. za validaciju-->
+<!DOCTYPE root SYSTEM "lekcija.dtd">
+
+<!--               INTERNI DTD DEO ZA VALIDACIJU XM KADA NIJE POTREBNO VALIDIRATI VISE OD OVOG JEDNOG DOCUMENTA
+<!DOCTYPE root [    
+    <!ELEMENT root (country)*>
+    <!ELEMENT country (name, capital, description)>
+    <!ATTLIST country countryCode CDATA #IMPLIED >
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT capital (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+]>
+                    KRAJ PRIMERA INTERNI                             -->
+
+
+<root>
+    <country countryCode="sr">
+        <name>Serbia</name>
+        <capital>Belgrade</capital>
+        <description>Serbia is.....</description>
+    </country>
+    <country countryCode="fr">
+        <name>France</name>
+        <capital>Paris</capital>
+        <description>France is.....</description>
+    </country>
+</root>
+<!-- 
+    Da bi se koristila xm shema za validaciju u root tag se upisuje PROSTOR IMENA koji poveuje"linkuje" shema fajl xsd sa dokumentom za validaciju 
+-->
+
+<!--
+
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="lekcija.xsd">
+    <country countryCode="sr">
+        <name>Serbia</name>
+        <capital>Belgrade</capital>
+        <description>Serbia is.....</description>
+    </country>
+    <country countryCode="fr">
+        <name>France</name>
+        <capital>Paris</capital>
+        <description>France is.....</description>
+    </country>
+</root>
+
+-->

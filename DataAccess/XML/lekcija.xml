@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="template.css"?>
+
+<!-- Da bi XML dokument sa vise elemenata bio validan moze imati samo jedan ROOT element , UVEK stavimo na pocetku prvo taj eement pa poslekoliko god da imamo elemenata svi ce oni biti njegova deca. -->
+
+<root>
+
+    <!--KOMENTAR-->
+
+    <!-- CDATA omogucuje da se specijalni karakteri napisu bez zamenskih elemenata -->
+    <![CDATA[
+    a < b && b > c && c < a
+]]>
+    <!-- KRAJ CDATA komentara -->
+
+    <recipe>
+        <title>Grilled Cheese Sandwich</title>
+        <ingredients>
+            <ingredient qty="2">bread slice</ingredient>
+            <ingredient>cheese slice</ingredient>
+            <ingredient qty="2">margarine pat</ingredient>
+        </ingredients>
+    </recipe>
+
+
+    <recipe>
+        <title>Kombucha Skin Cream</title>
+        <ingredients>
+            <ingredient qty="15g">beeswax</ingredient>
+            <ingredient qty="100ml">olive oil</ingredient>
+            <ingredient qty="1tbsp">wheat germ</ingredient>
+            <ingredient qty="10ml">calendula oil</ingredient>
+            <ingredient qty="2tsp">kombucha tea</ingredient>
+            <ingredient qty="1ml">lavender essential oil</ingredient>
+        </ingredients>
+    </recipe>
+    <!-- Kada se ovako nadju dva elementa kojima je koreno ime isto ("recipe") onda moramo da napravimo prostore imena kojima ce mo dati ddo znanja brovseru na koji se tacno element misli i odakle dolaze podaci u taj element-->
+    <!--   PRVI NACIN   -->
+
+    <c:recipe xmlns:c="http://www.my-site.com/cooking">
+        <c:title>Grilled Cheese Sandwich</c:title>
+        <c:ingredients>
+            <c:ingredient qty="2">bread slice</c:ingredient>
+            <c:ingredient>cheese slice</c:ingredient>
+            <c:ingredient qty="2">margarine pat</c:ingredient>
+        </c:ingredients>
+    </c:recipe>
+
+    <b:recipe xmlns:b="http://www.my-site.com/beauty">
+        <b:title>Kombucha Skin Cream</b:title>
+        <b:ingredients>
+            <b:ingredient qty="15g">beeswax</b:ingredient>
+            <b:ingredient qty="100ml">olive oil</b:ingredient>
+            <b:ingredient qty="1tbsp">wheat germ</b:ingredient>
+            <b:ingredient qty="10ml">calendula oil</b:ingredient>
+            <b:ingredient qty="2tsp">kombucha tea</b:ingredient>
+            <b:ingredient qty="1ml">lavender essential oil</b:ingredient>
+        </b:ingredients>
+    </b:recipe>
+    <!--   KRAJ PRVOG NACINA   -->
+
+
+    <!--   DRUGI ""PRAVI""  NACIN   -->
+
+    <root xmlns:c="http://www.my-site.com/cooking"
+        xmlns:b="http://www.my-site.com/beauty">
+
+        <c:recipe>
+            <c:title>Grilled Cheese Sandwich</c:title>
+            <c:ingredients>
+                <c:ingredient qty="2">bread slice</c:ingredient>
+                <c:ingredient>cheese slice</c:ingredient>
+                <c:ingredient qty="2">margarine pat</c:ingredient>
+            </c:ingredients>
+        </c:recipe>
+
+        <b:recipe>
+            <b:title>Kombucha Skin Cream</b:title>
+            <b:ingredients>
+                <b:ingredient qty="15g">beeswax</b:ingredient>
+                <b:ingredient qty="100ml">olive oil</b:ingredient>
+                <b:ingredient qty="1tbsp">wheat germ</b:ingredient>
+                <b:ingredient qty="10ml">calendula oil</b:ingredient>
+                <b:ingredient qty="2tsp">kombucha tea</b:ingredient>
+                <b:ingredient qty="1ml">lavender essential oil</b:ingredient>
+            </b:ingredients>
+        </b:recipe>
+
+    </root>
+
+    <!--   KRAJ DRUGOG NACINA   -->
+</root>

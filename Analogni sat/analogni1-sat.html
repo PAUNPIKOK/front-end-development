@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Paunovic Zoran - PAUN">
+    <title>Analogni Casovnik</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(191, 239, 245);
+        }
+
+        #my-canvas {
+            background-image: linear-gradient(rgba(31, 31, 141, 0.5), rgba(0, 255, 128, 0.5)), url('clock.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <canvas id="my-canvas" width="900" height="600">
+        Your web browser does not support canvas element.
+    </canvas>
+
+    <script>
+
+        let myCanvas = document.getElementById("my-canvas");
+        let ctx = myCanvas.getContext('2d');
+
+
+        //window.onload = draw;
+        setInterval(draw, 1000);
+
+
+        function draw() {
+
+            let myCanvas = document.getElementById("my-canvas");
+
+            if (myCanvas.getContext) {
+                let ctx = myCanvas.getContext('2d');
+                update(ctx);
+            } else {
+                alert("Canvas is not supported.");
+            }
+        }
+
+		const deg = 6;
+		let day = new Date();
+		let hh = day.getHours();
+		let mm = day.getMinutes();
+		let ss = day.getSeconds();
+
+        var angle = ss * deg; // secs
+        var angle1 = (mm - 50) * deg; // minutes
+        var angle2 = hh > 12 ? (hh-12) * 30 - 180 : hh * 30 - 180; // hours
+
+        function update(ctx) {
+
+            /////////////////////////////////////kazaljka sekundara/////////////////////////////////////
+
+            ctx.save();
+            ctx.clearRect(0, 0, 900, 600);
+
+            ctx.translate(450, 300);
+            ctx.rotate((Math.PI / 180) * angle);
+            ctx.translate(-450, -300);
+
+            ctx.beginPath();
+            ctx.lineWidth = 5;
+            ctx.lineCap = 'round';
+            ctx.moveTo(450, 300);
+            ctx.lineTo(450, 50);
+            ctx.stroke();
+
+            ctx.restore();
+
+            angle = angle + deg;
+
+
+            /////////////////////////////////kazaljka minutara////////////////////////////////////////////
+
+            ctx.save();
+
+            ctx.translate(450, 300);
+            ctx.rotate((Math.PI / 180) * angle1);
+            ctx.translate(-450, -300);
+
+            ctx.beginPath();
+            ctx.lineWidth = 7;
+            ctx.lineCap = 'round';
+            ctx.moveTo(450, 300);
+            ctx.lineTo(280, 200);
+            ctx.stroke();
+
+            ctx.restore();
+
+            /////////////////////////////////////kazaljka satnica/////////////////////////////////////////
+
+            ctx.save();
+
+            ctx.translate(450, 300);
+            ctx.rotate((Math.PI / 180) * angle2);
+            ctx.translate(-450, -300);
+
+            ctx.beginPath();
+            ctx.lineWidth = 9;
+            ctx.lineCap = 'round';
+            ctx.moveTo(450, 300);
+            ctx.lineTo(450, 390);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(450, 300);
+            ctx.arc(450, 300, 15, 0, 2 * Math.PI);
+            ctx.fill();
+
+            ctx.restore();
+
+            if (angle == 360) {
+                angle1 = angle1 + deg;
+                angle2 = angle2 + 1;
+                angle = 0;
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
